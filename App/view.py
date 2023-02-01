@@ -47,6 +47,7 @@ def newController():
 
 def printMenu():
     print("Opciones:")
+
     print("1- Cargar Libros")
     print("2- Cargar Tags")
     # TODO: Mods de Est-1 en el Lab 2, agregar opcion 3
@@ -59,7 +60,7 @@ def loadBooks(control):
     Carga los libros
     """
     books = controller.loadBooks(control,
-                                 "GoodReads/books-small.csv")
+                                 "GoodReads/books.csv")
     return books
 
 
@@ -77,7 +78,7 @@ def loadBooksTags(control):
     Cargar los Tags de libros
     """
     # TODO: Mods de Est-1 en el Lab 2
-    booktags = controller.loadBooksTags(control, "GoodReads/book_tags-small.csv") 
+    booktags = controller.loadBooksTags(control, "GoodReads/book_tags.csv") 
     return booktags 
 
 
