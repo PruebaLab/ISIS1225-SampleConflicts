@@ -75,7 +75,8 @@ def addBookTags(catalog, booktagsfile):
     Esta funcion guardar los booktags provenientes del archivo CSV.
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    pass
+    catalog["book_tags"] = lt.newList(datastructure="ARRAY_LIST", filename=booktagsfile) 
+    return catalog 
 
 
 def addTag(catalog, tag):
@@ -102,7 +103,8 @@ def createBookTagList(catalog):
     Esta funcion crea una lista vacia para booktags.
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    pass
+    catalog["book_tags"] = lt.newList(datastructure="ARRAY_LIST") 
+    return catalog 
 
 
 def addBookTag(catalog, booktag):
@@ -110,7 +112,8 @@ def addBookTag(catalog, booktag):
     Esta funcion agrega un elemento a lista de booktags.
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    pass
+    lt.addLast(catalog["book_tags"], booktag) 
+    return catalog 
 
 
 # Funciones de consulta
